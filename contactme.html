@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me | CyberSecurity Specialist</title>
+    <link rel="stylesheet" href="contactme.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Contact Me</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions or would like to collaborate on a cybersecurity project, feel free to reach out. I’d love to connect!</p>
+
+            <!-- Contact Form -->
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <script>
+                document.getElementById("messageForm").addEventListener("submit", function(event) {
+                    event.preventDefault(); // Prevent the form from reloading the page
+                    const message = document.getElementById("messageInput").value;
+        
+                    if (message.trim()) {
+                        console.log("Message sent:", message); // Replace this with your actual send logic
+                        document.getElementById("messageInput").value = ""; // Clear the input field
+                    } else {
+                        alert("Please type a message before sending.");
+                    }
+                });
+            </script>
+
+            <h3>Alternatively, you can reach me at:</h3>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:sunjothomas13@gmail.com">Send me an Email</a></li>
+                <li>Phone: +237 675 660 451</li>
+                <li>Social Media:
+                    <ul class="social-links">
+                        <li><a href="https://x.com/home" target="_blank">X (formerly Twitter)</a></li>
+                        <li><a href="https://www.instagram.com/sunjothomas/?hl=en" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.coursera.org/account-profile" target="_blank">Coursera</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

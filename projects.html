@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #141414;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px auto;
+            flex-wrap: wrap;
+        }
+        .project {
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .project img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+        }
+        .project:hover {
+            transform: scale(1.1);
+        }
+        .project-title {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>My Projects</header>
+
+    <div class="projects-container">
+        <!-- Netflix Logo Project -->
+        <div class="project">
+            <a href="netflix/index.html">
+                <img src="netflix/net12.png" alt="Netflix Logo">
+                <p class="project-title">Netflix Clone</p>
+            </a>
+        </div>
+
+        <!-- Monitor Display Project -->
+        <div class="project">
+            <a href="display/index.html">
+                <img src="display/images.jpg" alt="Monitor Display">
+                <p class="project-title">Monitor Display</p>
+            </a>
+        </div>
+
+        <!-- Calculator Project -->
+        <div class="project">
+            <a href="Calculator/index.html">
+                <img src="Calculator/calc.jpg" alt="Calculator">
+                <p class="project-title">Calculator App</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
